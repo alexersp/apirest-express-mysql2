@@ -5,6 +5,8 @@ const config = require("./config.js");
 
 const products = require("./modules/products/productsRouter.js");
 const roles = require("./modules/roles/rolesRoutes.js");
+const users = require("./modules/users/usersRoutes.js");
+const categories = require("./modules/categories/categoriesRoutes.js");
 
 const app = express();
 
@@ -25,5 +27,7 @@ app.get("/api/v1", (req, res) => {
 
 app.use("/api/v1/products", products);
 app.use("/api/v1/roles", roles);
+app.use("/api/v1/users", users);
+app.use("/api/v1/categories", categories);
 
 module.exports = app;
