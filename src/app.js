@@ -3,7 +3,7 @@ const morgan = require("morgan");
 const cors = require("cors");
 const config = require("./config.js");
 
-const products = require("./modules/products/productsRouter.js");
+const products = require("./modules/products/productsRoutes.js");
 const roles = require("./modules/roles/rolesRoutes.js");
 const users = require("./modules/users/usersRoutes.js");
 const categories = require("./modules/categories/categoriesRoutes.js");
